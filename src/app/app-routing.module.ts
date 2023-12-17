@@ -19,7 +19,7 @@ const routes: Routes = [
   {path:'tv' , component:TvComponent},
   {path:'contacts' , component:ContactsComponent},
   {path:'people' , component:PeopleComponent},
-  {path:'reviews' , loadChildren:'./reviews/reviews.module#ReviewsModule'},
+  {path:'reviews' , loadChildren:() => import('./reviews/reviews.module').then(m => m.ReviewsModule)},
 ];
 
 @NgModule({

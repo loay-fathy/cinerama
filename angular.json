@@ -22,7 +22,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -32,7 +32,6 @@
               "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss",
               "node_modules/@fortawesome/fontawesome-free/scss/solid.scss",
               "node_modules/@fortawesome/fontawesome-free/scss/brands.scss",
-
               "src/styles.scss"
             ],
             "scripts": [
@@ -54,7 +53,6 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
@@ -133,6 +131,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "sun2"
+    }
+  },
+  "defaultProject": "sun2",
+  "cli": {
+    "analytics": "f0221bee-ce2d-4da3-be6f-b049278d939d"
+  }
 }
